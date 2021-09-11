@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Bus_Reservation_System.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body style="height:100%">
+    <form runat="server">
+            <div class="col-md-12 " style="background-color: black; color: white ;height:5vh;">
+                Bus Reservation System
+            </div>
+            <div class="row " style="padding:0px">
+                <div class="col-md-2 " style="background-color: black; color: black;height:95vh;">
+                    <br />
+                    <br />
+                    <div style="height: 50px">
+                        
+                        <asp:Button ID="Button1" runat="server" BackColor="#e4c201"  CssClass="btn btn-block" Text="Home" OnClick="Button1_Click" />
+                    </div>
+                    <div style="height: 50px">
+
+                        <asp:Button ID="Button2" runat="server" BackColor="#e4c201" CssClass="btn btn-block" Text="Customers" OnClick="ButtonCustomers_Click" />
+                    </div>
+                    <div style="height: 50px">
+
+                        <asp:Button ID="Button3" runat="server" BackColor="#e4c201" CssClass="btn btn-block" Text="Buses" OnClick="Button3_Click" />
+                    </div>
+                  <!--  <div style="height: 50px">
+
+                        <asp:Button ID="Button4" runat="server" BackColor="#e4c201" CssClass="btn btn-block" Text="Routes" OnClick="Button4_Click" />
+                    </div> -->
+                    <div style="height: 50px">
+
+                        <asp:Button ID="Button5" runat="server" BackColor="#e4c201" CssClass="btn btn-block" Text="Sheduling" OnClick="Button5_Click" />
+                    </div>
+                </div> 
+                <div class="col-md-10 " style="height:95vh;">
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+            </div>
+
+    </form>
+</body>
+</html>

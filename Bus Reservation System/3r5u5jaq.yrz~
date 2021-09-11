@@ -1,0 +1,38 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="UserCustomerDeatils.aspx.cs" Inherits="Bus_Reservation_System.UserCustomerDeatils" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div>
+
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-3"></div>
+         <div class="col-md-6">
+             <form runat="server" class="form-container">
+                    <div class="form-group">
+                        <h3>Passenger Information</h3>
+                        <hr />
+                        <div>
+                            <asp:Label ID="LabelName" runat="server" Text="Name"></asp:Label>
+                            <asp:TextBox ID="TextBoxName" runat="server"></asp:TextBox>
+                            <asp:Label ID="LabelGender" runat="server" Text="Gender"></asp:Label>
+                            <asp:RadioButton ID="RadioButtonMale" runat="server" />Male<asp:RadioButton ID="RadioButtonFemale" runat="server" />Female
+                            <asp:Label ID="LabelAge" runat="server" Text="Label"></asp:Label>
+                            <asp:TextBox ID="TextBoxAge" runat="server"></asp:TextBox>
+                        </div>
+                        <h3>Contact deatils</h3>
+                        <hr />
+                        <div>
+                            <asp:Label ID="LabelMail" runat="server" Text="Mail"></asp:Label>
+                            <asp:TextBox ID="TextBoxMail" runat="server"></asp:TextBox>
+                            <asp:Label ID="LabelPhone" runat="server" Text="Phone Number"></asp:Label>
+                        </div>
+                        <hr />
+                        <div class="row"><div class="col-md-8"><h5>Total Amount:<asp:Label ID="LabelAmount" runat="server" Text="n"></asp:Label></h5></div><div class="col-md-4">
+                            <asp:Button ID="ButtonPay" runat="server" Text="Prceed To Pay" /></div></div>
+                        </div>
+                 </form>
+         </div>
+         <div class="col-md-3"></div>
+    </div>
+</asp:Content>
